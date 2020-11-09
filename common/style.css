@@ -1,0 +1,1406 @@
+/* common style*/
+@font-face {
+  font-family: 'gangster_groteskregular';
+  src: url('../fonts/gangstergrotesk-regular.woff2') format('woff2'), url('../fonts/gangstergrotesk-regular.woff') format('woff'), url('../fonts/gangstergrotesk-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 3vh;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.noDisplay {
+  display: none !important;
+}
+
+/*_______________________________________________________________________RESPONSIVE HEIGHTS*/
+@media only screen and (max-width: 600px) {
+  .height8 {
+    height: 60px;
+  }
+
+  .height10 {
+    height: 10vh;
+  }
+
+  .height20 {
+    height: 120px;
+  }
+
+  .noDesktop{
+    display:flex;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .height8 {
+    height: 60px;
+  }
+
+  .height10 {
+    height: 10vh;
+  }
+
+  .height20 {
+    height: 120px;
+  }
+
+  .noDesktop{
+    display:flex;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .height8 {
+    height: 60px;
+  }
+
+  .height10 {
+    height: 10vh;
+  }
+
+  .height20 {
+    height: 130px;
+  }
+
+  .noDesktop{
+    display:none;
+  }
+}
+
+.height12 {
+  height: 12vh;
+}
+
+.height16 {
+  height: 16vh;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.bttm {
+  border-bottom: 2px solid #000;
+}
+
+.rt {
+  border-right: 2px solid #000;
+}
+
+.lt {
+  border-left: 2px solid #000;
+}
+
+.tp {
+  border-top: 2px solid #000;
+}
+
+.centerY {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.centerX {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centerDown {
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textrt {
+  text-align: right;
+}
+
+.textlt {
+  text-align: left;
+}
+
+.textcr {
+  text-align: center;
+}
+
+p {
+  font-family: 'gangster_groteskregular';
+  color: #000;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'gangster_groteskregular';
+  color: #000;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'gangster_groteskregular';
+  color: #000;
+}
+
+/*_______________________________________________________________________RESPONSIVE TEXT*/
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+
+  h1 {
+    font-size: 6.7vw;
+  }
+
+  #footer a {
+    font-size: 4.5vw;
+  }
+
+  #footer p {
+    font-size: 4.5vw;
+  }
+
+  .cat a, #all a {
+    font-size: 5vw;
+  }
+
+  #text a {
+    font-size: 5vw;
+  }
+
+  #heightContact a {
+    font-size: 6vw;
+  }
+
+  .big {
+    font-size: 9vw !important;
+  }
+
+  #menuPage a {
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  p {
+    font-size: 2.4vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  h1 {
+    font-size: 3.5vw;
+  }
+
+  #footer a {
+    font-size: 2vw;
+  }
+
+  #footer p {
+    font-size: 2vw;
+  }
+
+  .cat a, #all a {
+    font-size: 2.4vw;
+  }
+
+  #text a {
+    font-size: 2.4vw;
+  }
+
+  #heightContact a {
+    font-size: 3vw;
+  }
+
+  .big {
+    font-size: 5vw !important;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  p {
+    font-size: 1.6vw;
+  }
+
+  h2 {
+    font-size: 2.1vw;
+  }
+
+  h1 {
+    font-size: 2.35vw;
+  }
+
+  #footer a {
+    font-size: 1.15vw;
+  }
+
+  #footer p {
+    font-size: 1.15vw;
+  }
+
+  .cat a, #all a {
+    font-size: 1.25vw;
+  }
+
+  #text a {
+    font-size: 1.6vw;
+  }
+
+  #heightContact a {
+    font-size: 2.1vw;
+  }
+
+  .big {
+    font-size: 4.2vw !important;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  p {
+    font-size: 1.45vw;
+  }
+
+  h2 {
+    font-size: 1.9vw;
+  }
+
+  h1 {
+    font-size: 2.15vw;
+  }
+
+  #footer a {
+    font-size: 1.05vw;
+  }
+
+  #footer p {
+    font-size: 1.05vw;
+  }
+
+  .cat a, #all a {
+    font-size: 1.15vw;
+  }
+
+  #text a {
+    font-size: 1.45vw;
+  }
+
+  #heightContact a {
+    font-size: 1.9vw;
+  }
+
+  .big {
+    font-size: 3.8vw !important;
+  }
+}
+
+/*_______________________________________________________________________END*/
+/* frame style*/
+#frame {
+  position: fixed;
+  padding: 0;
+  z-index: 190;
+}
+
+#header {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  background-color: #fff;
+  z-index: 200;
+}
+
+#header .leftWidth {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+#header .damaButton {
+  padding: 0 20px 0 20px;
+}
+
+.damaButton:hover {
+  cursor: pointer;
+}
+
+#closeFilter {
+  height: 25px;
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.live {
+  background-color: #000;
+}
+
+.live h2 {
+  color: #fff;
+}
+
+.frameButton:hover {
+  background-color: #000;
+}
+
+.frameButton:hover p {
+  color: #fff;
+}
+
+#founderText {
+  position: relative;
+}
+
+.founder {
+  position: absolute;
+  width: max-content;
+}
+
+.on {
+  background-color: #000;
+}
+
+.on h2 {
+  color: #fff;
+}
+
+#menuPage a {
+  font-family: 'gangster_groteskregular';
+  color: #000;
+}
+
+#menuPage div {
+  position: absolute;
+}
+
+#menuAbout {
+  top: 30%;
+}
+
+#menuIg {
+  top: 61%;
+}
+
+#menuMail {
+  top: 72%;
+}
+
+/*_______________________________________________________________________RESPONSIVE HEADER*/
+@media only screen and (max-width: 600px) {
+  .frameButton {
+    display: none;
+  }
+
+  #burgerMenuButton {
+    display: inline;
+    padding: 0;
+  }
+
+  #burgerMenuButton img {
+    height: 25px;
+    position: absolute;
+  }
+
+  #underNameContainer {
+    display: block;
+    height: 60px;
+  }
+
+  #nameContainer {
+    display: block;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    padding: 0 20px;
+  }
+
+  #closeFilter {
+    position: absolute;
+  }
+
+  #menuPage {
+    display: inline-block;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #000;
+  }
+
+  #menuPage .center {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  #burgerMenuButton {
+    display: none;
+  }
+
+  #underNameContainer {
+    display: block;
+    height: 60px;
+  }
+
+  #nameContainer {
+    display: block;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    padding: 0 20px;
+  }
+
+  #closeFilter {
+    position: absolute;
+    right: 30px;
+  }
+
+  #menuPage {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #burgerMenuButton {
+    display: none;
+  }
+
+  #underNameContainer {
+    display: none;
+  }
+
+  #nameContainer {
+    position: relative;
+    top: 0;
+    border: none;
+    height: auto;
+    padding: 0 30px;
+  }
+
+  #closeFilter {
+    position: relative;
+    left: 18vw;
+  }
+
+  #menuPage {
+    display: none;
+  }
+}
+
+/*_______________________________________________________________________END*/
+/* footer style*/
+#footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  background-color: #fff;
+}
+
+#footer a {
+  font-family: 'gangster_groteskregular';
+  color: #000;
+  margin: 0;
+  width: 100%;
+}
+
+#footer a:hover {
+  text-decoration: none;
+}
+
+#footer p {
+  font-family: 'gangster_groteskregular';
+  color: #000;
+  margin: 0;
+  width: 100%;
+}
+
+.arrow {
+  height: 35%;
+}
+
+/*_______________________________________________________________________RESPONSIVE FOOTER*/
+@media only screen and (max-width: 575px) {
+  #topButtonMobile {
+    display: flex;
+  }
+
+  #topButton {
+    display: none;
+  }
+
+  #instagramF {
+    display: none;
+  }
+
+  #emailF {
+    display: none;
+  }
+
+  #footer .col-xl, #footer .col-12 {
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  #topButtonMobile {
+    display: flex;
+  }
+
+  #topButton {
+    display: none;
+  }
+
+  #instagramF {
+    display: none;
+  }
+
+  #emailF {
+    display: none;
+  }
+
+  #footer .col-xl, #footer .col-12 {
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  #topButtonMobile {
+    display: flex;
+  }
+
+  #topButton {
+    display: none;
+  }
+
+  #instagramF {
+    display: flex;
+  }
+
+  #emailF {
+    display: flex;
+  }
+
+  #footer .col-xl, #footer .col-12 {
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #topButtonMobile {
+    display: flex;
+    cursor: pointer;
+  }
+
+  #topButton {
+    display: none;
+  }
+
+  #footer .col-xl, #footer .col-12 {
+    height: 60px;
+  }
+
+  .footerButton:hover {
+    background-color: #000;
+  }
+
+  .footerButton:hover .arrow {
+    filter: invert(1);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #topButtonMobile {
+    display: none;
+  }
+
+  #topButton {
+    display: flex;
+    cursor: pointer;
+  }
+
+  #footer .col-xl, #footer .col-12 {
+    height: 100px;
+  }
+
+  .footerButton:hover {
+    background-color: #000;
+  }
+
+  .footerButton:hover .arrow {
+    filter: invert(1);
+  }
+}
+
+/*_______________________________________________________________________END*/
+/*______________________________________INDEX*/
+.link {
+  background: #fff;
+  margin-top: 10vh;
+}
+
+#category h2 {
+  cursor: pointer;
+}
+
+#filters {
+  position: relative;
+}
+
+#catHover {
+  bottom: 0;
+}
+
+.cat {
+  position: relative;
+  bottom: 0;
+}
+
+.cat a, #all a {
+  font-family: 'gangster_groteskregular';
+  color: #000;
+}
+
+.clicked {
+  text-decoration: underline;
+}
+
+#noResult {
+  text-align: center;
+}
+
+/*_______________________________________________________________________RESPONSIVE INDEX*/
+@media only screen and (max-width: 600px) {
+  .projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, calc(100%));
+    justify-content: space-between;
+    padding: 0 5vw 0 5vw;
+  }
+
+  .linkImg {
+    height: 44vw;
+  }
+
+  #filters {
+    height: auto;
+  }
+
+  #catHover {
+    position: relative;
+  }
+
+  #openCategories {
+    display: inline-block;
+    width: 25px;
+    position: absolute;
+  }
+
+  #category {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .cat, #all {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #all {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, calc(45%));
+    column-gap: 10%;
+    justify-content: space-between;
+    padding: 0 4vw 0 4vw;
+  }
+
+  .linkImg {
+    height: 22vw;
+  }
+
+  #filters {
+    height: auto;
+  }
+
+  #catHover {
+    position: relative;
+  }
+
+  #openCategories {
+    display: inline-block;
+    width: 25px;
+    position: absolute;
+    right: 30px;
+  }
+
+  #category {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .cat, #all {
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  #all {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, calc(30%));
+    column-gap: 5%;
+    justify-content: space-between;
+    padding: 0 3vw 0 3vw;
+  }
+
+  .linkImg {
+    height: 15vw;
+  }
+
+  #filters {
+    height: 140px;
+  }
+
+  #catHover {
+    position: absolute;
+    padding: 2vh 0 2vh 0;
+  }
+
+  #openCategories {
+    display: none;
+  }
+
+  #category {
+    margin-left: 2vw;
+    padding: 0;
+  }
+
+  .cat {
+    padding: 0;
+    margin-left: 3.5vw;
+    cursor: pointer;
+    transform: translateY(19%);
+  }
+
+  #all {
+    margin-bottom: 10px;
+  }
+}
+
+/*_______________________________________________________________________END*/
+/* links*/
+.linkImg {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.linkTitleFrame {
+  position: relative;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.linkTitle {
+  position: relative;
+  margin: 4% 8% 4% 8%;
+}
+
+.link {
+  display: block;
+  box-sizing: border-box;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.link:hover .linkTitleFrame {
+  background-color: #000;
+}
+
+.link:hover p {
+  color: #fff;
+}
+
+/*______________________________________PROJECT*/
+/* content style*/
+#page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  border: 2px solid #000;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#page::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+#page {
+  -ms-overflow-style: none;
+}
+
+#page .row {
+  width: 100%;
+  margin: 0;
+}
+
+.content {
+  height: 100%;
+}
+
+#page .col-2, .col-5, .col-7, .col-10 {
+  padding: 0;
+}
+
+#imgProject {
+  padding: 0;
+}
+
+#carouselExampleIndicators {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* carousel*/
+.slideshow {
+  width: 100%;
+  position: relative;
+  left: 50%;
+}
+
+.carousel-item {
+  overflow: hidden;
+}
+
+.fill {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-control-next {
+  opacity:1;
+  width: 50%;
+  height: 100%;
+  right: 0;
+}
+
+.carousel-control-prev {
+  opacity:1;
+  width: 50%;
+  height: 100%;
+  left: 0;
+}
+
+.carousel-item .row {
+  margin: 0;
+}
+
+.description {
+  position: relative;
+  margin-left: 2%;
+}
+
+.number {
+  position: relative;
+  text-align: center;
+}
+
+/* text*/
+#text p {
+  margin: 16% 8% 8% 8%;
+}
+
+#text a {
+  font-family: 'gangster_groteskregular';
+  margin: 0 8% 0 8%;
+  color: #000;
+}
+
+.noMarginBottom {
+  margin: 8% 8% 0 8% !important;
+}
+
+/*_______________________________________________________________________RESPONSIVE PROJECT*/
+@media only screen and (max-width: 600px) {
+  #imgProject {
+    border-bottom: 2px solid #000;
+    ;
+  }
+
+  .descContainer {
+    display: none;
+  }
+
+  #title {
+    display: none;
+  }
+
+  #openProjNames {
+    display: inline-block;
+    width: 25px;
+    position: absolute;
+  }
+
+  #founderTextMobile {
+    position: relative;
+    padding: 0 8% 8% 8%;
+  }
+
+  #ProjTitleMobileContainer {
+    position: relative;
+  }
+
+  #ProjTitleMobile {
+    position: relative;
+    padding: 8%;
+  }
+
+  #ProjTitleMobile h1 {
+    margin: 0;
+    max-width: 85%;
+  }
+
+  .founderMobile {
+    position: relative;
+    padding: 0;
+  }
+
+  .comma {
+    position: relative;
+  }
+
+  #relatedLinks .link {
+    position: relative;
+  }
+
+  .carouselArrow{
+    display:block;
+    width:45px;
+    background:#fff;
+    padding:10px;
+    bottom:10px;
+    border:2px solid #000;
+  }
+
+  .carousel-control-prev .carouselArrow{
+    left:10px;
+  }
+
+  .carousel-control-next .carouselArrow{
+    right:10px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  #imgProject {
+    border: 0;
+  }
+
+  .descContainer {
+    display: flex;
+  }
+
+  #txtProject {
+    padding: 0;
+    margin: 0;
+    border-left: 0;
+    border-top: 2px solid #000;
+  }
+
+  #title {
+    display: none;
+  }
+
+  #openProjNames {
+    display: inline-block;
+    width: 25px;
+    position: absolute;
+    right: 30px;
+  }
+
+  #founderTextMobile {
+    position: relative;
+    padding: 0 8% 8% 8%;
+  }
+
+  #ProjTitleMobileContainer {
+    position: relative;
+  }
+
+  #ProjTitleMobile {
+    position: relative;
+    padding: 8%;
+  }
+
+  #ProjTitleMobile h1 {
+    margin: 0;
+    max-width: 95%;
+  }
+
+  .founderMobile {
+    position: relative;
+    padding: 0;
+  }
+
+  .comma {
+    position: relative;
+    padding-right: 8px;
+  }
+
+  #relatedLinks .link {
+    position: relative;
+  }
+
+  #relatedLinks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, calc(30%));
+    column-gap: 5%;
+    justify-content: space-between;
+    padding: 0 3vw 0 3vw;
+  }
+
+  #relatedLinks .linkImg{
+    height:15vw;
+  }
+
+  .carouselArrow{
+    display:block;
+    width:60px;
+    background:#fff;
+    padding:10px;
+    top:10px;
+    border:2px solid #000;
+  }
+
+  .carousel-control-prev .carouselArrow{
+    left:10px;
+  }
+
+  .carousel-control-next .carouselArrow{
+    right:10px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #txtProject {
+    z-index:10;
+    padding: 0;
+    margin-left: -2px;
+    border-top: 0;
+    border-left: 2px solid #000;
+  }
+
+  #title h1 {
+    margin: 8%;
+  }
+
+  #title {
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #fff;
+    margin-bottom: -2px !important;
+  }
+
+  #ProjTitleMobileContainer {
+    display: none;
+  }
+
+  #relatedLinks .link {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .carouselArrow{
+    display:none;
+  }
+
+  .carousel-control-prev {
+    cursor: url("../img/arrowleft.svg"), auto;
+  }
+
+  .carousel-control-next {
+    cursor: url("../img/arrowright.svg"), auto;
+  }
+}
+
+/*_______________________________________________________________________END*/
+/*______________________________________CONTACT*/
+#heightContact .row {
+  height: 100%;
+}
+
+#heightContact a {
+  font-family: 'gangster_groteskregular';
+  color: #000;
+  margin: 0;
+}
+
+#heightContact a:hover {
+  text-decoration: none;
+}
+
+/*______________________________________ABOUT*/
+#heightAbout {
+  margin: 0;
+  padding: 0;
+}
+
+#aboutDama {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#aboutDama div {
+  width: 100%;
+}
+
+.big a {
+  padding: 0 1.2vw 0 1.2vw;
+}
+
+#aboutImage {
+  padding: 0;
+  width:100%;
+  position:relative;
+}
+
+#container-FounderText {
+  height: 100%;
+  z-index:10;
+}
+
+#aboutimage div {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+#us {
+  overflow: hidden;
+}
+
+/*_______________________________________________________________________RESPONSIVE ABOUT*/
+@media only screen and (max-width: 600px) {
+
+  #usText{
+    height:max-content;
+    border-bottom:none;
+    border-right:none;
+  }
+
+  .big {
+    left: 0;
+    padding-left: 0;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .nameTitle {
+    padding: 8%;
+  }
+
+  .nameText {
+    padding: 0 8% 8% 8%;
+  }
+
+  #usText {
+    padding: 8%;
+  }
+
+  .carouselArrowAbout{
+    display:block;
+    width:45px;
+    background:#fff;
+    padding:10px;
+    top:10px;
+    border:2px solid #000;
+  }
+
+  #aboutArrowLeft{
+    left:10px;
+  }
+
+  #AboutArrowRight{
+    right:10px;
+  }
+
+  #container-FounderText {
+    margin:0;
+    padding: 8%;
+  }
+
+}
+
+@media only screen and (min-width: 601px) {
+
+  #usText{
+    height:max-content;
+    border-bottom:2px solid #000;
+    border-right:none;
+  }
+
+  .big {
+    left: 0;
+    padding-left: 2vw;
+  }
+
+  .nameTitle {
+    padding: 2vw;
+  }
+
+  .nameText {
+    padding: 0 2vw 2vw 2vw;
+  }
+
+  #usText {
+    padding: 2vw;
+  }
+
+  .carouselArrowAbout{
+    display:block;
+    width:60px;
+    background:#fff;
+    padding:10px;
+    top:10px;
+    border:2px solid #000;
+  }
+
+  #aboutArrowLeft{
+    left:10px;
+  }
+
+  #AboutArrowRight{
+    right:10px;
+  }
+
+  #container-FounderText {
+    margin-right:-2px;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+  #usText{
+    height:auto;
+    border-bottom:none;
+    border-right:2px solid #000;
+  }
+
+  .big {
+    left: 0;
+    padding-left: 1vw;
+    cursor: context-menu;
+  }
+
+  .nameTitle {
+    padding: 1.5vw;
+  }
+
+  .nameText {
+    padding: 0 1.5vw 1.5vw 1.5vw;
+  }
+
+  #usText {
+    padding: 1.5vw;
+  }
+
+  .carouselArrowAbout{
+    display:none;
+  }
+
+  #container-FounderText {
+    margin-right:-2px;
+  }
+
+}
+/*_______________________________________________________________________END*/
+
+/*_______________________________________________________________________MARGINS*/
+.leftWidth, .frameButton, #footerButton, #page{
+  margin-top:-2px !important;
+}
+
+#header .damaButton{
+  margin-left:-2px !important;
+}
+
+#header .frameButton{
+  margin-right:-2px !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #page{
+    margin-top:0 !important;
+  }
+
+}
