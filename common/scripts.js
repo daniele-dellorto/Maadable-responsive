@@ -50,17 +50,14 @@ var widthAnimationImg;
 
 //_________________________________________________________________________
 
-function getUrlVars() {
-  var vars = {};
-  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-    vars[key] = value;
-  });
-  return vars;
+function removePrefix(prefix,s) {
+    return s.substr(prefix.length);
 }
 
-var first = getUrlVars()["Use_Id"];
+var p = removePrefix('https://daniele-dellorto.github.io/Maadable-responsive/', window.location.href)
 
-alert(first);
+alert(window.location.href);
+alert(p);
 
 //_____________________________________________________________________
 
