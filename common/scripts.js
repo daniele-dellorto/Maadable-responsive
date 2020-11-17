@@ -37,16 +37,32 @@ var widthAnimationImg;
 
 //_________________________________________________________________________
 
-var GET = {};
-var query = window.location.search.substring(1).split("&");
-for (var i = 0, max = query.length; i < max; i++)
-{
-  if (query[i] === "") // check for trailing & with no param
-      continue;
+// var GET = {};
+// var query = window.location.search.substring(1).split("&");
+// for (var i = 0, max = query.length; i < max; i++)
+// {
+//   if (query[i] === "") // check for trailing & with no param
+//       continue;
+//
+//   var param = query[i].split("=");
+//   GET[decodeURIComponent(param[0])] = decodeURIComponent(param[1] || "");
+// }
 
-  var param = query[i].split("=");
-  GET[decodeURIComponent(param[0])] = decodeURIComponent(param[1] || "");
+//_________________________________________________________________________
+
+function getUrlVars() {
+  var vars = {};
+  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+    vars[key] = value;
+  });
+  return vars;
 }
+
+var first = getUrlVars()["id"];
+var second = getUrlVars()["page"];
+
+alert(first);
+alert(second);
 
 //_____________________________________________________________________
 
