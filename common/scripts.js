@@ -54,7 +54,7 @@ function removePrefix(prefix,s) {
     return s.substr(prefix.length);
 }
 
-var p = removePrefix('https://daniele-dellorto.github.io/Maadable-responsive/', window.location.href)
+var p = removePrefix('https://daniele-dellorto.github.io/Maadable-responsive/?', window.location.href)
 
 alert(window.location.href);
 alert(p);
