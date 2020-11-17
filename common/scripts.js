@@ -59,7 +59,7 @@ var p = removePrefix('https://daniele-dellorto.github.io/Maadable-responsive/?',
 alert(window.location.href);
 alert(p);
 
-if(p==DanieleDellOrto){
+if(p=='DanieleDellOrto'){
   console.log("wewe");
 }
 
