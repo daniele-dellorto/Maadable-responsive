@@ -58,11 +58,9 @@ function getUrlVars() {
   return vars;
 }
 
-var first = getUrlVars()["id"];
-var second = getUrlVars()["page"];
+var first = getUrlVars()["Use_Id"];
 
 alert(first);
-alert(second);
 
 //_____________________________________________________________________
 
