@@ -52,23 +52,6 @@ var widthAnimationImg;
 
 jQuery(document).ready(function($) {
 
-  //_________________________________________________________________________
-
-  function removePrefix(prefix,s) {
-      return s.substr(prefix.length);
-  }
-
-  var p = removePrefix('https://daniele-dellorto.github.io/Maadable-responsive/?', window.location.href)
-
-  alert(window.location.href);
-  alert(p);
-
-  if(p=='DanieleDellOrto'){
-    console.log("wewe");
-  }
-
-  //_____________________________________________________________________
-
   $(".carousel").on("touchstart", function(event) {
     var xClick = event.originalEvent.touches[0].pageX;
     $(this).one("touchmove", function(event) {
@@ -123,6 +106,23 @@ jQuery(document).ready(function($) {
   /*front-page*/
 
   if ($('a.index').length > 0) {
+
+    //_________________________________________________________________________
+
+    function removePrefix(prefix,s) {
+        return s.substr(prefix.length);
+    }
+
+    var p = removePrefix('https://daniele-dellorto.github.io/Maadable-responsive/?', window.location.href)
+
+    alert(window.location.href);
+    alert(p);
+
+    if(p=='DanieleDellOrto'){
+      console.log("wewe");
+    }
+
+    //_____________________________________________________________________
 
     $('.topbttn').click(function() {
       $('#page').animate({
