@@ -35,22 +35,22 @@ var durationAnimation2;
 var widthAnimationTxt;
 var widthAnimationImg;
 
-jQuery(document).ready(function($) {
+//_________________________________________________________________________
 
-  //_________________________________________________________________________
-
-  var GET = {};
+var GET = {};
 var query = window.location.search.substring(1).split("&");
 for (var i = 0, max = query.length; i < max; i++)
 {
-    if (query[i] === "") // check for trailing & with no param
-        continue;
+  if (query[i] === "") // check for trailing & with no param
+      continue;
 
-    var param = query[i].split("=");
-    GET[decodeURIComponent(param[0])] = decodeURIComponent(param[1] || "");
+  var param = query[i].split("=");
+  GET[decodeURIComponent(param[0])] = decodeURIComponent(param[1] || "");
 }
 
 //_____________________________________________________________________
+
+jQuery(document).ready(function($) {
 
   $(".carousel").on("touchstart", function(event) {
     var xClick = event.originalEvent.touches[0].pageX;
